@@ -13,7 +13,9 @@ body *::after {
   outline: none;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   display: block;
   list-style: none;
 }
@@ -27,7 +29,8 @@ a img {
   border: none;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
   color: inherit;
 }
@@ -36,10 +39,105 @@ textarea {
   resize: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   -moz-appearance: none !important;
        appearance: none !important;
   -webkit-appearance: none !important;
   border-radius: 0;
+}
+
+body {
+  background-color: #f7e4d4;
+  font-family: "Montserrat";
+}
+
+form {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+form h1,
+form button {
+  font-family: "EB Garamond";
+}
+
+form h1 {
+  font-weight: 400;
+  color: #467745;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 521px) {
+  form h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  form h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+form input[type="text"],
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+form input[type="text"] {
+  height: 64px;
+}
+
+form textarea {
+  height: 120px;
+}
+
+form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+form .checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  -ms-flex-preferred-size: 20px;
+      flex-basis: 20px;
+}
+
+form .checkbox label {
+  -ms-flex-preferred-size: calc(100% - 20px);
+      flex-basis: calc(100% - 20px);
+}
+
+form button {
+  display: block;
+  width: 280px;
+  height: 80px;
+  margin: 0 auto 20px auto;
+  border-radius: 40px;
+  background-color: #467745;
+  color: #f7e4d4;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 /*# sourceMappingURL=style.css.map */

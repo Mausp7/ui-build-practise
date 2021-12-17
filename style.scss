@@ -2,26 +2,28 @@ body,
 body *,
 body *::before,
 body *::after {
-	box-sizing:border-box;
-	margin:0;
-	padding:0;
-	border:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
 
-	background:transparent;
+	background: transparent;
 
-	font-family:inherit;
-	text-decoration:none;
-	outline:none;
+	font-family: inherit;
+	text-decoration: none;
+	outline: none;
 }
 
-ol, ul, li {
-	display:block;
+ol,
+ul,
+li {
+	display: block;
 
-	list-style:none;
+	list-style: none;
 }
 
 table {
-	border-spacing:0;
+	border-spacing: 0;
 	border-collapse: collapse;
 }
 
@@ -29,7 +31,8 @@ a img {
 	border: none;
 }
 
-button, a {
+button,
+a {
 	cursor: pointer;
 
 	color: inherit;
@@ -39,9 +42,102 @@ textarea {
 	resize: none;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
 	appearance: none !important;
 	-webkit-appearance: none !important;
-	
+
 	border-radius: 0;
+}
+
+body {
+	background-color: #f7e4d4;
+
+	font-family: "Montserrat";
+}
+
+form {
+	width: 100%;
+	max-width: 520px;
+
+	margin: 0 auto;
+	padding: 0px 20px;
+
+	h1,
+	button {
+		font-family: "EB Garamond";
+	}
+
+	h1 {
+		font-weight: 400;
+		color: #467745;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 521px) {
+			font-size: 48px;
+			text-align: center;
+		}
+		@media screen and (max-width: 520px) {
+			font-size: 36px;
+			text-align: left;
+		}
+	}
+
+	input[type="text"],
+	textarea {
+		display: block;
+		width: 100%;
+
+		margin-bottom: 20px;
+		padding: 20px;
+		background-color: #fff;
+
+		font-size: 16px;
+	}
+
+	input[type="text"] {
+		height: 64px;
+	}
+
+	textarea {
+		height: 120px;
+	}
+
+	.checkbox {
+		display: flex;
+		align-items: center;
+
+		margin-bottom: 30px;
+
+		input[type="checkbox"] {
+			width: 20px;
+			height: 20px;
+
+			margin-right: 20px;
+			background-color: #fff;
+
+			flex-basis: 20px;
+		}
+
+		label {
+			flex-basis: calc(100% - 20px);
+		}
+	}
+
+	button {
+		display: block;
+		width: 280px;
+		height: 80px;
+
+		margin: 0 auto 20px auto;
+		border-radius: 40px;
+		background-color: #467745;
+		color: #f7e4d4;
+
+		font-size: 21px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+	}
 }
